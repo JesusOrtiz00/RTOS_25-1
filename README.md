@@ -1,7 +1,7 @@
 # RTOS_25-1
 
-# Integrantes del equipo
+## Integrantes del equipo
   
-    Jesús Abraham Castorena Hernández
-    Brian Augusto Saldaña Pacheco
-    Jesús Antonio Ortiz Aragón
+    +Jesús Abraham Castorena Hernández
+    +Brian Augusto Saldaña Pacheco
+    +Jesús Antonio Ortiz Aragón
