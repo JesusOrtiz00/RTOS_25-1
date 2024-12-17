@@ -34,7 +34,7 @@ void taskA(void *parameters)
       Serial.println("Error enviando a queue1 desde taskA");
     }
 
-    // Esperar hasta que tarea 2 procese el dato (semáforo tomado)
+    // Esperar hasta que tarea 2 procese el dato
     if (xSemaphoreTake(mutex, portMAX_DELAY))
     {
       // Recibir de queue2
@@ -46,7 +46,7 @@ void taskA(void *parameters)
       }
     }
 
-    vTaskDelay(pdMS_TO_TICKS(DELAY)); // Controlar el ritmo de envío
+    vTaskDelay(pdMS_TO_TICKS(DELAY));
   }
 }
 
@@ -80,7 +80,7 @@ void taskB(void *parameters)
       Serial.println("Error enviando a queue2 desde taskB");
     }
 
-    vTaskDelay(pdMS_TO_TICKS(DELAY)); // Controlar el ritmo de procesamiento
+    vTaskDelay(pdMS_TO_TICKS(DELAY)); 
   }
 }
 
